@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Mencari Sekarang...</h3>
+    </div>
+    <div class="hero-bg" >
+        <section class="top">
+            <header>
+                <a href="#">kelurahan.tugu</a>
+            </header>
+
+            <h1><span>Selamat Datang</span>Di Website Resmi Kami</h1>
+
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it.</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Apa yang Anda Cari?</label>
+                        <input type="text" name="city" id="city">
+                        <p>misal: "wisata air terjun"</p>
+                    </div>
+
+                    <input type="button" value="Temukan" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Kelurahan Tugu</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it.It is a long established fact that a reader will be distracted by the readable content of a page when television looking at its layout. The point of using.</p>
+            <p>Lorem Ipsum is that it.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using </p>
+        </div>
+        <img src="img/image-2.png" alt="gambar-wisata-kelurahan-tugu">
+    </section>
+    
+    <script>
+                let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+    </script>
+</body>
+</html>
